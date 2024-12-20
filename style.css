@@ -1,0 +1,677 @@
+/* الإعدادات العامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Amiri', serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+  transition: background 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* قسم العنوان الرئيسي */
+.header {
+  background:  url('photo_3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-out;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(95, 215, 219, 0.4);
+  margin-bottom: 20px;
+  animation: slideInLeft 2s ease-out;
+}
+
+.sub-title {
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 20px;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* الأنيميشين */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .title {
+      font-size: 45px;
+  }
+
+  .sub-title {
+      font-size: 18px;
+  }
+}
+/* قسم المسابقة القادمة */
+/* تصميم البطاقة */
+.summary-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-icon {
+  background-color: #4e73df;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+/* الأنيميشين */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .card {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .card-icon {
+      font-size: 35px;
+      padding: 15px;
+  }
+
+  .card-content h3 {
+      font-size: 20px;
+  }
+
+  .card-content p {
+      font-size: 14px;
+  }
+} 
+
+.upcoming-contest {
+  margin-bottom: 40px;
+}
+
+.contest-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideInUp 2s ease-out;
+}
+
+.contest-card h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contest-card p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contest-stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  font-size: 20px;
+  color: #555;
+  padding: 10px;
+}
+
+.stat-item i {
+  font-size: 40px;
+  color: #3f51b5;
+  margin-bottom: 10px;
+}
+
+/* حركة للإظهار */
+@keyframes slideInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* الأزرار */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background: #3f51b5;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2c3e50;
+  transform: scale(1.1);
+}
+
+.btn-secondary {
+  background: #2196f3;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #1e88e5;
+  transform: scale(1.1);
+}
+
+.btn-success {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #388e3c;
+  transform: scale(1.1);
+}
+
+/* قسم الجدول الزمني و الجوائز */
+.schedule, .prizes, .registration {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-out;
+}
+
+h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 40px;
+  }
+
+  .contest-stats {
+      flex-direction: column;
+  }
+
+  .stat-item {
+      margin-bottom: 15px;
+  }
+
+  .btn {
+      width: 100%;
+      padding: 15px;
+  }
+}
+
+
+
+
+/* الإعدادات العامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Amiri', serif;
+  background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.5s ease-in-out;
+}
+
+/* قسم العنوان الرئيسي */
+.header {
+  background: linear-gradient(135deg, #1cc88a, #4e73df);
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-out;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 24px;
+  color: #fff;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* قسم تواريخ المسابقة */
+.dates {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.date-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.date-box:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 40px;
+  color: #1cc88a;
+  margin-bottom: 10px;
+}
+
+.date-text {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.date-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* أقسام المسابقة */
+.competition-section {
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.competition-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #1cc88a;
+}
+
+.competition-section .description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.competition-section .register-btn {
+  padding: 15px 30px;
+  background-color: #1cc88a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.competition-section .register-btn:hover {
+  background-color: #4e73df;
+}
+
+/* الأنيميشين */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .header {
+      padding: 30px 20px;
+  }
+
+  .title {
+      font-size: 35px;
+  }
+
+  .sub-title {
+      font-size: 18px;
+  }
+
+  .intro-text {
+      font-size: 16px;
+  }
+
+  .dates {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .competition-section {
+      padding: 20px;
+  }
+
+  .competition-section h2 {
+      font-size: 24px;
+  }
+}
+
+
+
+
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+  transition: background 0.5s ease-in-out;
+}
+
+h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+/* حركات الأنيميشين */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* تصميم الحاوية الرئيسية */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+}
+
+/* تصميم النموذج */
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #1cc88a;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4e73df;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #1cc88a;
+}
+
+/* الرسالة */
+.message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 28px;
+  }
+
+  .form-group input, .form-group select, .form-group button {
+      font-size: 14px;
+  }
+}
+
+
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4e73df;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* وصف القسم */
+.section-description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* قسم الجوائز */
+.prizes-section {
+  background-color: #fff;
+  padding: 50px 0;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prizes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.prize-card {
+  background-color: #f8f9fa;
+  padding: 30px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+.prize-card:hover {
+  transform: scale(1.05);
+}
+
+.prize-icon {
+  background-color: #4e73df;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.prize-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.prize-card p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* الأنيميشين */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .prizes {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .prize-card {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}

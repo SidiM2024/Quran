@@ -1,13 +1,3 @@
-// تشغيل الشريط الجانبي
-document.getElementById('open-sidebar').addEventListener('click', function() {
-    document.querySelector('.sidebar').classList.add('open');
-});
-
-// إغلاق الشريط الجانبي
-document.getElementById('close-sidebar').addEventListener('click', function() {
-    document.querySelector('.sidebar').classList.remove('open');
-});
-
 document.getElementById("registration-form").addEventListener("submit", function (e) {
     e.preventDefault();  // Prevent form submission
 
